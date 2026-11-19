@@ -1,4 +1,4 @@
-# BlueBerry Framework
+# BlueBerry
 
 [BlueBerry] Is a lightweight module loader for Roblox - Created for my games used inside Vulpes Studios. <br/>
 Created by: @Mt1Fox | Vulpes Studios <br/>
