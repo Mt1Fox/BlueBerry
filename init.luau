@@ -1,5 +1,5 @@
 
-const _Description = "[BlueBerry] - Is a lightweight framework module loader for Roblox - Created for my games used inside Vulpes Studios."
+const _Description = "[BlueBerry] - Is a lightweight module loader for Roblox - Created for my games used inside Vulpes Studios."
 const _Created     = "by: @Mt1Fox | Vulpes Studios"
 const _Version     = "1.9.0"
 
@@ -23,7 +23,7 @@ local BlueBerry = {}
 
 --w-- // Run this before loading modules
 function BlueBerry:Init()
-	print(("[BlueBerry]: Initializing framework version %s... ✅"):format(tostring(_Version)))
+	print(("[BlueBerry]: Initializing loader version %s... ✅"):format(tostring(_Version)))
 	BlueBerry.LoadedModules = {}
 	shared.BlueBerry = self
 	return self
@@ -36,7 +36,7 @@ function BlueBerry:LoadModules(Parent : Instance | {any}, Category : string?, De
 	end
 
 	if not BlueBerry.LoadedModules then
-		warn("[BlueBerry]: BlueBerry framework is not initialized. Please run BlueBerry:Init() before loading modules.")
+		warn("[BlueBerry]: BlueBerry is not initialized. Please run BlueBerry:Init() before loading modules.")
 		return nil
 	end
 
@@ -173,7 +173,7 @@ function BlueBerry:LoadModule(Module : ModuleScript, Category : string?, Debug :
 	end
 
 	if not BlueBerry.LoadedModules then
-		warn("[BlueBerry]: BlueBerry framework is not initialized. Please run BlueBerry:Init() before loading modules.")
+		warn("[BlueBerry]: BlueBerry is not initialized. Please run BlueBerry:Init() before loading modules.")
 		return nil
 	end
 
